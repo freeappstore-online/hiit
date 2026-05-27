@@ -1,0 +1,24 @@
+{
+  "name": "freehiitapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @hiit/web dev",
+    "build": "pnpm --filter @hiit/web build",
+    "preview": "pnpm --filter @hiit/web preview",
+    "typecheck": "pnpm --filter @hiit/web exec tsc -b",
+    "test": "pnpm --filter @hiit/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/hiit.git"
+  }
+}
